@@ -7,6 +7,7 @@ using System.Xml;
 
 namespace api.Models
 {
+    [Table("Comments")]
     public class Comment
     {
         public int Id {get; set;}
@@ -16,5 +17,7 @@ namespace api.Models
         public int? StockId {get; set;}
         //navigation prop   
         public Stock? Stock {get; set;}
+        public string AppUserId {get; set;}
+        public AppUser AppUser {get; set;}
     }
 }

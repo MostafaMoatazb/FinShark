@@ -3812,6 +3812,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 10.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 10.0.10",
       "Microsoft.Extensions.Identity.Core >= 10.0.10",
+      "Microsoft.OpenApi >= 2.7.5",
       "Microsoft.SqlServer.Server >= 1.0.0",
       "Newtonsoft.Json >= 13.0.4",
       "Swashbuckle.AspNetCore >= 10.2.3"
@@ -3908,6 +3909,10 @@
           "Microsoft.Extensions.Identity.Core": {
             "target": "Package",
             "version": "[10.0.10, )"
+          },
+          "Microsoft.OpenApi": {
+            "target": "Package",
+            "version": "[2.7.5, )"
           },
           "Microsoft.SqlServer.Server": {
             "target": "Package",

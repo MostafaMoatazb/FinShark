@@ -7,6 +7,7 @@ using api.Dtos.Stock;
 using api.Helpers;
 using api.Interfaces;
 using api.Mappers;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -25,8 +26,8 @@ namespace api.Controllers
             _stockRepo = stockRepo;
         }
 
-        //Get = Read 
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> GetAll([FromQuery]QueryObject query)
         //query object is used to filter the stocks
         {
@@ -35,7 +36,7 @@ namespace api.Controllers
                 return BadRequest(ModelState);
             }
             var stocks = await _stockRepo.GetAllAsync(query);
-            var stockDtos = stocks.Select(s => s.ToStockDto());
+            var stockDtos = stocks.Select(s => s.ToStockDto()).ToList();
             return Ok(stockDtos);
         } 
 
