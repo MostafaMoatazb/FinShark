@@ -163,3 +163,5 @@ C:\Users\rouby\OneDrive\Desktop\CsharpProjects\api\obj\Debug\net10.0\refint\api.
 C:\Users\rouby\OneDrive\Desktop\CsharpProjects\api\obj\Debug\net10.0\api.pdb
 C:\Users\rouby\OneDrive\Desktop\CsharpProjects\api\obj\Debug\net10.0\api.genruntimeconfig.cache
 C:\Users\rouby\OneDrive\Desktop\CsharpProjects\api\obj\Debug\net10.0\ref\api.dll
+C:\Users\rouby\OneDrive\Desktop\CsharpProjects\api\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\rouby\OneDrive\Desktop\CsharpProjects\api\bin\Debug\net10.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
